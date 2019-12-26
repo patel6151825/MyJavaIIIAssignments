@@ -1,0 +1,14 @@
+package employeeserviceinjection.service;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("manager")
+public class ManagerService implements EmployeeService {
+
+	@Override
+	public Double calculateSalary(Double basicSalary) {
+		return 5000.0;
+	}
+}

@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+D:\1_John_abott_study_files\10_JAVA_III\eclipse-workspace\MyGitProjects\assignments\assignment1\.metadata\.plugins\org.eclipse.jdt.core
+4141992607.index

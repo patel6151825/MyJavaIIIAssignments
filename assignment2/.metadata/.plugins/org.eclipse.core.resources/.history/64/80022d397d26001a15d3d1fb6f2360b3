@@ -1,0 +1,25 @@
+package employeeserviceinjection.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+import employeeserviceinjection.service.EmployeeService;
+
+@Component
+public class Employee {
+	final String qualifier = "manager";
+	Double basicSalary = 10000.0;
+
+	@Autowired
+	@Qualifier(qualifier)
+	EmployeeService service;
+
+	public Employee() {
+		super();
+	}
+
+	public void showSalary() {
+		System.out.println("Salary of " + qualifier + " is " + service.calculateSalary(basicSalary));
+	}
+}

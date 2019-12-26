@@ -1,0 +1,15 @@
+package employeeserviceinjection.service;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("clerk")
+public class ClerkService implements EmployeeService {
+
+	@Override
+	public Double calculateSalary(Double basicSalary) {
+		return basicSalary+2000.0;
+	}
+}
+

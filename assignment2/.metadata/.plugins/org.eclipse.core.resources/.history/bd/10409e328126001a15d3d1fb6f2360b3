@@ -1,0 +1,8 @@
+package studentinjection.model;
+
+public class Teacher {
+	
+	Student1 student1;
+	Student2 student2;
+
+}

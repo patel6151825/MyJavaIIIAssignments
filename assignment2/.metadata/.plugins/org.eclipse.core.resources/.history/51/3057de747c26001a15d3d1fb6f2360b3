@@ -1,0 +1,12 @@
+package employeeserviceinjection.service;
+
+@Component
+@Qualifier("clerk")
+public class ClerkService implements EmployeeService {
+
+	@Override
+	public Double calculateSalary() {
+		return 2000.0;
+	}
+}
+

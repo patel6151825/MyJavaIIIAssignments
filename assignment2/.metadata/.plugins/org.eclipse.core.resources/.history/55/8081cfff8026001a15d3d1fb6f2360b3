@@ -1,0 +1,13 @@
+package studentinjection.model;
+
+public class Student2 {
+	
+	Integer stdId;
+	String stdName;
+	public Student2(Integer stdId, String stdName) {
+		super();
+		this.stdId = stdId;
+		this.stdName = stdName;
+	}
+	
+}

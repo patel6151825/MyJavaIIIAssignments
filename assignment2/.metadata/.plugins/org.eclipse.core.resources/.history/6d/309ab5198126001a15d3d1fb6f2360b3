@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="teacherBean" class="studentinjection.model.Teacher">
+	</bean>
+	
+	<bean id="student1Bean" class="studentinjection.model.Student1">
+	<constructor-arg name="stdId" type="Integer" value="123456"></constructor-arg>
+	<constructor-arg name="stdName" type="String" value="Alice"></constructor-arg>
+	</bean>
+
+	<bean id="student2Bean" class="studentinjection.model.Student2">
+	<constructor-arg name="stdId" type="Integer" value="112233"></constructor-arg>
+	<constructor-arg name="stdName" type="String" value="Bob"></constructor-arg>
+	</bean>
+	
+</beans>

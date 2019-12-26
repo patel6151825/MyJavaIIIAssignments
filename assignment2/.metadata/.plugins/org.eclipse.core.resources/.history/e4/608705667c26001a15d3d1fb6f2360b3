@@ -1,0 +1,7 @@
+package employeeserviceinjection.service;
+
+@Service
+public interface EmployeeService {
+
+	public Double calculateSalary();
+}

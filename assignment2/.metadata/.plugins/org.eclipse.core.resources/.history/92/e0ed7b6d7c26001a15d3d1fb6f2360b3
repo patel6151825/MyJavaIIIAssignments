@@ -1,0 +1,11 @@
+package employeeserviceinjection.service;
+
+@Component
+@Qualifier("manager")
+public class ManagerService implements EmployeeService {
+
+	@Override
+	public Double calculateSalary() {
+		return 5000.0;
+	}
+}

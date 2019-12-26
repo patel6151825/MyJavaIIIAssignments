@@ -1,0 +1,18 @@
+package employeeserviceinjection.model;
+
+@Component
+public class Employee {
+	final String qualifier = "manager";
+
+	@Autowired
+	@Qualifier(qualifier)
+	EmployeeService service;
+
+	public Employee() {
+		super();
+	}
+
+	public void showSalary() {
+		System.out.println("Salary of " + qualifier + " is " + service.calculateSalary());
+	}
+}

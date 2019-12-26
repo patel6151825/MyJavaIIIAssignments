@@ -1,0 +1,10 @@
+package studentinjection.model;
+
+public class Student1 {
+	
+	Integer stdId;
+	String stdName;
+	
+	
+
+}

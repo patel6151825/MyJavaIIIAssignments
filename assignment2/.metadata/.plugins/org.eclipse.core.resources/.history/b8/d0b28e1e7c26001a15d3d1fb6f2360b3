@@ -1,0 +1,5 @@
+package employeeserviceinjection.model;
+
+public class Employee {
+
+}
